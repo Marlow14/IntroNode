@@ -1,0 +1,11 @@
+const add = require('./add.js');
+const subtract = require('./subtract.js');
+const multiply = require('./multiply.js');
+const Calculator = require('./calculator.js');
+const myCalc = new Calculator();
+console.log('5+7=', add(5,7));
+console.log(`1+2=`,myCalc.add(1,2));
+console.log(`9-3=`, subtract(9,3));
+console.log(`1-4=`, myCalc.subtract(1,4));
+console.log(`9*3=`, multiply(9,3));
+console.log(`3*5=`, myCalc.multiply(3,5));
